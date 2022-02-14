@@ -414,7 +414,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><p>给定一个整数 n 和 m 个不同的质数 p1,p2,…,pm。</p>
+                <h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>给定一个整数 n 和 m 个不同的质数 p1,p2,…,pm。</p>
 <p>请你求出 1∼n中能被 p1,p2,…,pm中的至少一个数整除的整数有多少个。</p>
 <p>给定一个整数 n 和 m 个不同的质数 p1,p2,…,pm。</p>
 <p>请你求出 1∼n中能被 p1,p2,…,pm中的至少一个数整除的整数有多少个。</p>
@@ -812,7 +812,7 @@
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
             collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            headingSelector: 'h1, h2, h3, h4'
         });
 
         // modify the toc link href to support Chinese.
@@ -824,7 +824,7 @@
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
